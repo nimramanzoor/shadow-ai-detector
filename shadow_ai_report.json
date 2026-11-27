@@ -1,0 +1,36 @@
+{
+    "192.168.1.42": [
+        {
+            "line_number": 2,
+            "url": "https://api.openai.com/v1/chat/completions",
+            "payload_bytes": 15420,
+            "risk_level": "Medium (Usage)",
+            "raw_log": "2026-11-27 09:15:01 192.168.1.42 POST https://api.openai.com/v1/chat/completions 200 15420"
+        },
+        {
+            "line_number": 5,
+            "url": "https://huggingface.co/models",
+            "payload_bytes": 5000,
+            "risk_level": "Medium (Usage)",
+            "raw_log": "2026-11-27 09:25:05 192.168.1.42 GET https://huggingface.co/models 200 5000"
+        }
+    ],
+    "192.168.1.88": [
+        {
+            "line_number": 4,
+            "url": "https://api.anthropic.com/v1/messages",
+            "payload_bytes": 89400,
+            "risk_level": "CRITICAL (Data Leak)",
+            "raw_log": "2026-11-27 09:22:14 192.168.1.88 POST https://api.anthropic.com/v1/messages 200 89400"
+        }
+    ],
+    "192.168.1.100": [
+        {
+            "line_number": 6,
+            "url": "https://chatgpt.com/backend-api/conversation",
+            "payload_bytes": 120500,
+            "risk_level": "CRITICAL (Data Leak)",
+            "raw_log": "2026-11-27 09:30:11 192.168.1.100 POST https://chatgpt.com/backend-api/conversation 200 120500"
+        }
+    ]
+}
